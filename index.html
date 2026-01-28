@@ -44,9 +44,21 @@ Crafted with heritage, warmth, and elegance.
 <div class="timer" id="timer"></div>
 
 <div class="email-box">
-<input id="email" type="email" placeholder="Enter your email">
-<button onclick="registerEmail()">Notify Me</button>
+  <label for="email" class="sr-only">Email address</label>
+
+  <input
+    id="email"
+    type="email"
+    placeholder="Enter your email"
+    aria-label="Email address"
+    required
+  >
+
+  <button onclick="registerEmail()">Notify Me</button>
 </div>
+
+<p id="message" aria-live="polite"></p>
+
 
 <p id="message"></p>
 
