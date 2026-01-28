@@ -1,0 +1,139 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+/* Loader */
+#loader{
+position:fixed;
+inset:0;
+background:#1a0e07;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:9999;
+color:#d4af37;
+}
+
+.spinner{
+width:50px;
+height:50px;
+border:4px solid #d4af37;
+border-top:4px solid transparent;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin-bottom:15px;
+}
+
+@keyframes spin{
+to{transform:rotate(360deg);}
+}
+
+/* Background */
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:radial-gradient(circle,#3b2415,#1a0e07);
+color:#f3e3c3;
+}
+
+/* Particles */
+#particles{
+position:fixed;
+inset:0;
+z-index:-1;
+}
+
+/* Main Card */
+.wrapper{
+text-align:center;
+padding:40px 25px;
+max-width:500px;
+backdrop-filter:blur(10px);
+border-radius:20px;
+background:rgba(255,255,255,.05);
+box-shadow:0 0 40px rgba(212,175,55,.2);
+border:1px solid rgba(212,175,55,.3);
+margin:auto;
+}
+
+/* Scroll animation */
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Content */
+.logo{
+width:120px;
+margin-bottom:20px;
+}
+
+h1{
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.desc{
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.timer{
+font-size:22px;
+margin-bottom:25px;
+color:#d4af37;
+}
+
+.email-box{
+display:flex;
+gap:10px;
+margin-bottom:15px;
+}
+
+input{
+flex:1;
+padding:12px;
+border:none;
+border-radius:6px;
+}
+
+button{
+background:#d4af37;
+border:none;
+padding:12px 18px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:.85;
+}
+
+#message{
+margin-top:10px;
+}
+
+.socials i{
+margin:0 10px;
+font-size:22px;
+cursor:pointer;
+}
+
+/* Mobile */
+@media(max-width:500px){
+.email-box{
+flex-direction:column;
+}
+}
