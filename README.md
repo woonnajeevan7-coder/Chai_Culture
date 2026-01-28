@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Chai Culture – Coming Soon Page
 
 A premium landing page built to showcase royal Indian chai heritage.
@@ -17,3 +18,6 @@ HTML, CSS, Vanilla JavaScript
 (Add your Netlify/Vercel link)
 
 Built for Chai Culture assignment.
+=======
+# Chai_Culture
+>>>>>>> fa16e7b4ff71e0034536768b19d3ad2e1ec160e5
