@@ -20,4 +20,4 @@ HTML, CSS, Vanilla JavaScript
 Built for Chai Culture assignment.
 =======
 # Chai_Culture
->>>>>>> fa16e7b4ff71e0034536768b19d3ad2e1ec160e5
+https://chai-culture1.netlify.app/
